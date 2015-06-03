@@ -98,19 +98,20 @@ public:
     void deleteAll() //delete all elements of the list
     {
         Node * tmp;
-        int i= 1;
+        if (!start)
+        {
+            std::cout << "XOR list is empty" << std::endl;
+            return;
+        }
         while(start->ptr)
         {
-            i++;
             tmp = start;
-            std::cout << "Deleting " << tmp->elem << std::endl;
             start->ptr->ptr = (Node *) ((uintptr_t)start->ptr->ptr ^ (uintptr_t)start);
             start = start->ptr;
             delete tmp;
         }
         delete end;
         start = end = NULL;
-        std::cout << "Deleted " << i << " elements!" << std::endl;
         print(0);
     }
     

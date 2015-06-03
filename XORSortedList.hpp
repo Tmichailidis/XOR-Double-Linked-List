@@ -96,7 +96,11 @@ public:
     void deleteAll() //delete all elements of the list
     {
         Node * tmp;
-        
+        if (!start)
+        {
+            std::cout << "XOR list is empty" << std::endl;
+            return;
+        }
         while(start->ptr)
         {
             tmp = start;
