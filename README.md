@@ -14,7 +14,7 @@ Class XORSortedList with 4 functions:
 - void deleteElem(T elem);
 
 Additionally:
-- main presenting the functions of the implemented XOR Sorted List:
+main presenting the functions of the implemented XOR Sorted List:
 - inserting {arg1} random int elements with limit = INT_MAX or {arg2} (if set)
 - deleting an element 
 - printing the list
