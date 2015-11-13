@@ -20,9 +20,8 @@ main presenting the functions of the implemented XOR Sorted List:
 - printing the list
 - deleting all elements 
 
-Files:
-- main.cpp
-- XORList.hpp
-- XORSortedList.hpp
-- Makefile
-- README.md
+compile: make
+
+clear: make clean
+
+run: ./xorlist [number for insertion] ~max limit of numbers~ (optional)
